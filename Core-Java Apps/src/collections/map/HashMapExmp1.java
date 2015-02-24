@@ -12,6 +12,7 @@ public class HashMapExmp1 {
 		map.put("BENZ", 60000);
 		map.put("Audi", 70000);
 		map.put("ford", 30000);
+		map.put(null, null);
 		//System.out.println("Vehicles size: " + map.size());
 		//System.out.println("Vehicle BMW is availble: " + map.containsKey("BMW"));
 		
@@ -28,7 +29,7 @@ public class HashMapExmp1 {
 		if(map.containsKey(nameToSearch)){
 			System.out.println("Price of "+nameToSearch+" - "+ map.get(nameToSearch) +" In cars!\n");
 		}else{
-			System.out.println(nameToSearch +"car not found in car pool, please check the name in : "+ map.keySet());
+			System.out.println(nameToSearch +"  car not found in car pool, please check the name in : "+ map.keySet());
 		}
 	}
 
